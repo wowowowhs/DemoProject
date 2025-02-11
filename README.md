@@ -26,7 +26,9 @@ kafka环境搭建，需要分别安装zookeeper和kafka。
 
 本例采用docker安装kafka环境，参考：https://blog.csdn.net/m0_64210833/article/details/134199061
 
+dubbo架构：https://developer.aliyun.com/article/808571
 
+kafka架构：https://blog.csdn.net/qq_32828253/article/details/110732652
 
 # **项目启动**
 
