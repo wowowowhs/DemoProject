@@ -2,13 +2,17 @@
 
 # **项目说明**
 
-本例子简单的展示SpringBoot+Mybatis+Dubbo+Kafka+Redis+Maven
+本例子简单的展示SpringBoot+Maven+Mybatis+Dubbo+Kafka+Redis
 
 其中，kafka示例展示了如何向kafka发送单个字符串和自定义对象消息，如何消费字符串和自定义对象。
 
-**可持续补充**：MongoDB、ES、RabbitMQ、RocketMQ等中间件的使用
+**可持续补充**：MongoDB、ES、RabbitMQ、RocketMQ等中间件的使用，以及加入nginx或者网关服务
 
 **运维知识**：Docker、K8S、Jenkins、Nexus、Habor、GitLab
+
+**项目架构总览**
+
+![架构](.\projectsrc\picture\架构.jpg)
 
 # **运行环境**
 

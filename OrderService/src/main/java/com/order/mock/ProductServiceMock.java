@@ -1,4 +1,4 @@
-package com.order.helper;
+package com.order.mock;
 
 import com.order.constant.OrderConstant;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.List;
  * 模拟库存，将库存初始化到redis中
  */
 @Component
-public class ProductStockMockHelper {
+public class ProductServiceMock {
 
     @Autowired
     private RedisTemplate redisTemplate;
