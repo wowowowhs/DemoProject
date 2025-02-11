@@ -12,7 +12,7 @@
 .idea
 ../src/main/**/taget/
 ../src/test/**/taget/
-
+./**/target/
 # Package Files #
 *.jar
 *.war
