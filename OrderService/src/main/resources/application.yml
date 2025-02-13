@@ -38,3 +38,16 @@ dubbo:
     name: dubbo-consumer
   consumer:
     timeout: 30000
+
+# alipay config
+alipay:
+  easy:
+    protocol: https
+    gatewayHost: openapi-sandbox.dl.alipaydev.com
+    signType: RSA2
+    # todo config by yourself
+    appId: app_id
+    merchantPrivateKey: application_private_key
+    alipayPublicKey: alipay_public_key
+    # callback url in your service
+    notifyUrl: url_by_nat_traversal_tool/notify

@@ -62,7 +62,7 @@ public class OrderController {
     }
 
     //redis 操作扣减库存
-    //todo
+    //todo 缓存和数据库数据一致？
     @PostMapping("/createOrderV3")
     public String createOrderV3(@RequestBody CreateOrderReqData createOrderReqData) {
         //创建订单逻辑......

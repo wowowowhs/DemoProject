@@ -111,3 +111,48 @@ CREATE TABLE `point`  (
 ) ENGINE = InnoDB;
 ```
 
+## 5、支付宝接入
+
+### 5.1 支付宝开放平台
+
+进入支付宝开放平台，进入沙箱
+
+![沙箱1](.\projectsrc\picture\沙箱1.jpg)
+
+依次了解相关页面以及我们需要关注的信息（红框所示）
+
+![沙箱应用](.\projectsrc\picture\沙箱应用.jpg)
+
+应用私钥和支付宝公钥参考下面方式找到：沙箱应用-》开发信息-》接口加签方式-》系统默认秘钥-》公钥模式-》查看
+
+![沙箱应用3](.\projectsrc\picture\沙箱应用3.jpg)
+
+![沙箱应用2](.\projectsrc\picture\沙箱应用2.jpg)
+
+沙箱账号
+
+![沙箱账号](.\projectsrc\picture\沙箱账号.jpg)
+
+沙箱工具
+
+![沙箱工具](.\projectsrc\picture\沙箱工具.jpg)
+
+### 5.2 项目配置
+
+application.yml文件配置项：
+
+**alipay.easy.appId**：将“沙箱应用”——》“基本信息”的 APPID 的值替换 app_id
+
+**alipay.easy.merchantPrivateKey**：配置成“应用私钥”，替换application.yml文件中的 application_private_key
+
+**alipay.easy.alipayPublicKey**：配置成“支付宝公钥”，替换application.yml文件中的 alipay_public_key
+
+其中，私钥和公钥，分别参考5.1
+
+### 5.3 支付环境搭建
+
+进入“沙箱工具”，**手机下载该沙箱工具**，参考“沙箱账号”的买家信息，登录即可，功能与支付宝功能无异
+
+### 5.4 支付回调环境搭建
+
+**alipay.easy.notifyUrl**：利用内网穿透工具，生成本机 “ip + 端口” 的url，替换application.yml的 url_by_nat_traversal_tool
