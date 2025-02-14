@@ -117,25 +117,25 @@ CREATE TABLE `point`  (
 
 进入支付宝开放平台，进入沙箱
 
-![沙箱1](.\projectsrc\picture\沙箱1.jpg)
+![沙箱1](./picture/沙箱1.jpg)
 
 依次了解相关页面以及我们需要关注的信息（红框所示）
 
-![沙箱应用](.\projectsrc\picture\沙箱应用.jpg)
+![沙箱应用](./picture/沙箱应用.jpg)
 
 应用私钥和支付宝公钥参考下面方式找到：沙箱应用-》开发信息-》接口加签方式-》系统默认秘钥-》公钥模式-》查看
 
-![沙箱应用3](.\projectsrc\picture\沙箱应用3.jpg)
+![沙箱应用3](./picture/沙箱应用3.jpg)
 
 ![沙箱应用2](.\projectsrc\picture\沙箱应用2.jpg)
 
 沙箱账号
 
-![沙箱账号](.\projectsrc\picture\沙箱账号.jpg)
+![沙箱账号](./picture/沙箱账号.jpg)
 
 沙箱工具
 
-![沙箱工具](.\projectsrc\picture\沙箱工具.jpg)
+![沙箱工具](./picture/沙箱工具.jpg)
 
 ### 5.2 项目配置
 
