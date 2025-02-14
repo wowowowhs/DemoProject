@@ -12,7 +12,7 @@
 
 **项目架构总览**
 
-![架构](.\projectsrc\picture\架构.jpg)
+![架构](./picture/架构.jpg)
 
 # **运行环境**
 
