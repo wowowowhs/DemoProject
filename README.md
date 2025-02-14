@@ -127,7 +127,7 @@ CREATE TABLE `point`  (
 
 ![沙箱应用3](./picture/沙箱应用3.jpg)
 
-![沙箱应用2](.\projectsrc\picture\沙箱应用2.jpg)
+![沙箱应用2](./picture/沙箱应用2.jpg)
 
 沙箱账号
 
