@@ -9,8 +9,14 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @Data
-public class AlipayConfig {
+public class AlipayConfigCommon {
 
+    /**
+     * alipay-easy版本配置
+     *
+     * @param aliPayProperties
+     * @return
+     */
     @Bean
     public Config Config(AliPayProperties aliPayProperties) {
         Config config = new Config();

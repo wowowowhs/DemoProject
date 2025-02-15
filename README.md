@@ -6,7 +6,7 @@
 
 其中，kafka示例展示了如何向kafka发送单个字符串和自定义对象消息，如何消费字符串和自定义对象。
 
-**可持续补充**：MongoDB、ES、RabbitMQ、RocketMQ等中间件的使用，以及加入nginx或者网关服务
+**可持续补充**：MongoDB、ES、RabbitMQ、RocketMQ等中间件的使用，以及加入nginx或者网关服务，持续接入支付宝其他支付方式以及微信支付
 
 **运维知识**：Docker、K8S、Jenkins、Nexus、Habor、GitLab
 
@@ -29,6 +29,10 @@ kafka环境搭建，需要分别安装zookeeper和kafka。
 dubbo架构：https://developer.aliyun.com/article/808571
 
 kafka架构：https://blog.csdn.net/qq_32828253/article/details/110732652
+
+支付宝扫码支付文档：[订单码支付 | 支付宝开放平台](https://open.alipay.com/api/detail?code=I1080300001000068149&index=1)
+
+支付宝电脑网站支付文档：[电脑网站支付 | 支付宝开放平台](https://open.alipay.com/api/detail?code=I1080300001000041203&index=1)
 
 # **项目启动**
 
@@ -149,10 +153,11 @@ application.yml文件配置项：
 
 其中，私钥和公钥，分别参考5.1
 
+**alipay.easy.notifyUrl**：利用内网穿透工具，生成本机 “ip + 端口” 的url，替换application.yml的 url_by_nat_traversal_tool
+
 ### 5.3 支付环境搭建
 
 进入“沙箱工具”，**手机下载该沙箱工具**，参考“沙箱账号”的买家信息，登录即可，功能与支付宝功能无异
 
-### 5.4 支付回调环境搭建
+### 
 
-**alipay.easy.notifyUrl**：利用内网穿透工具，生成本机 “ip + 端口” 的url，替换application.yml的 url_by_nat_traversal_tool

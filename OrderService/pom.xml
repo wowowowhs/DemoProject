@@ -80,10 +80,17 @@
         </dependency>
 
         <!-- 支付宝支付依赖 -->
+        <!-- 支付宝支付依赖——easy版本 -->
         <dependency>
             <groupId>com.alipay.sdk</groupId>
             <artifactId>alipay-easysdk</artifactId>
             <version>2.2.0</version>
+        </dependency>
+        <!-- 支付宝支付依赖——通用版本 -->
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>4.34.0.ALL</version>
         </dependency>
 
 
