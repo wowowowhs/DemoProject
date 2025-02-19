@@ -100,6 +100,12 @@
             <version>0.2.16</version>
         </dependency>
 
+        <!-- MongoDB 依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

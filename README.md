@@ -2,7 +2,7 @@
 
 # **项目说明**
 
-本例子简单的展示SpringBoot+Maven+Mybatis+Dubbo+Kafka+Redis
+本例子简单的展示SpringBoot+Maven+Mybatis+Dubbo+Kafka+Redis，以及简单的vue3构建的vue项目，vue3+elementUI 搭建的项目仅做简单的前端展示
 
 其中，kafka示例展示了如何向kafka发送单个字符串和自定义对象消息，如何消费字符串和自定义对象。
 
@@ -16,7 +16,9 @@
 
 # **运行环境**
 
-zookeeper-3.5.9、kafka-2.13-3.2.1、jdk8、nacos-server 2.5.0
+后端：zookeeper、kafka、jdk8、nacos-server 2.5、MongoDB-8.0.4
+
+前端：Node.js V22.14.0、vue/cli 5.0.8
 
 # **参考资料**
 
@@ -36,9 +38,9 @@ kafka架构：https://blog.csdn.net/qq_32828253/article/details/110732652
 
 # **项目启动**
 
-自行安装kafka环境、redis、nacos，配置数据库好后，启动项目即可，或者参考如下
+自行安装kafka环境、redis、nacos，配置数据库好后，启动项目即可，或者参考如下安装即可，以下都是按照学习的东西，按需安装即可，不是都必须安装的
 
-## 1、安装nacos
+## 1、安装Nacos
 
 启动nacos，下载安装包后。命令窗口进入解压后的bin目录，输入命令，启动nacos
 
@@ -46,7 +48,9 @@ kafka架构：https://blog.csdn.net/qq_32828253/article/details/110732652
 startup.cmd -m standalone
 ```
 
-## **2、Docker安装zookeeper**
+## **2、Docker安装kafka**
+
+### 2.1、Docker安装Zookeeper
 
 1、拉取镜像
 
@@ -66,7 +70,7 @@ docker run -d --name zookeeper -p 2181:2181 wurstmeister/zookeeper
 docker exec -it zookeeper /bin/bash
 ```
 
-## 3、**Docker安装kafka**
+### 2.2、**Docker安装Kafka**
 
 1、拉取镜像
 
@@ -102,7 +106,7 @@ docker run -d --name kafka -p 9092:9092 --link zookeeper:zookeeper --env KAFKA_Z
 
 wurstmeister/kafka: 使用的Docker镜像名字。
 
-## 4、数据库表
+## 3、数据库表
 
 ```sql
 CREATE TABLE `point`  (
@@ -115,9 +119,9 @@ CREATE TABLE `point`  (
 ) ENGINE = InnoDB;
 ```
 
-## 5、支付宝接入
+## 4、支付宝接入
 
-### 5.1 支付宝开放平台
+### 4.1 支付宝开放平台
 
 进入支付宝开放平台，进入沙箱
 
@@ -141,7 +145,7 @@ CREATE TABLE `point`  (
 
 ![沙箱工具](./picture/沙箱工具.jpg)
 
-### 5.2 项目配置
+### 4.2 项目配置
 
 application.yml文件配置项：
 
@@ -155,9 +159,20 @@ application.yml文件配置项：
 
 **alipay.easy.notifyUrl**：利用内网穿透工具，生成本机 “ip + 端口” 的url，替换application.yml的 url_by_nat_traversal_tool
 
-### 5.3 支付环境搭建
+### 4.3 支付环境搭建
 
 进入“沙箱工具”，**手机下载该沙箱工具**，参考“沙箱账号”的买家信息，登录即可，功能与支付宝功能无异
 
-### 
+
+
+## 5、demo-vue启动
+
+前端项目demo-vue采用vue/cli方式创建，demo-vue启动流程：
+
+```shell
+# 进入到 demo-vue 目录
+cd demo-vue
+# 运行项目
+npm run serve
+```
 
