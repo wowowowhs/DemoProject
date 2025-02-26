@@ -165,7 +165,11 @@ application.yml文件配置项：
 
 
 
-## 5、demo-vue启动
+## 5、PayPal接入
+
+参考网站：[开始使用 PayPal REST API](https://developer.paypal.com/api/rest/)
+
+## 6、demo-vue启动
 
 前端项目demo-vue采用vue/cli方式创建，demo-vue启动流程：
 
